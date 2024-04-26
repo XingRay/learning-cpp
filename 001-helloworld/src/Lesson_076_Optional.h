@@ -1,0 +1,12 @@
+//
+// Created by leixing on 2024/4/26.
+//
+
+#ifndef INC_001_HELLOWORLD_LESSON_076_OPTIONAL_H
+#define INC_001_HELLOWORLD_LESSON_076_OPTIONAL_H
+
+
+void optionalTest();
+
+
+#endif //INC_001_HELLOWORLD_LESSON_076_OPTIONAL_H

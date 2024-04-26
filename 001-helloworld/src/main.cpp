@@ -6,7 +6,8 @@
 #include "Lesson_069_TypeCast.h"
 #include "Lesson_074_BenchMark.h"
 #include "Lesson_075_struct_binding.h"
-
+#include "Lesson_076_Optional.h"
+#include "Lesson_077_Variant.h"
 
 int main() {
 
@@ -17,7 +18,10 @@ int main() {
 //    virtualDestructorTest();
 //    typeCastTest();
 //    benchMarkTest();
-    structBindingTest();
+//    structBindingTest();
+//    optionalTest();
+    variantTest();
+
 
     return 0;
 }
