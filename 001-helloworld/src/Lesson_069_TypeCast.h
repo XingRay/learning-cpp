@@ -1,0 +1,12 @@
+//
+// Created by leixing on 2024/4/25.
+//
+
+#ifndef INC_001_HELLOWORLD_LESSON_069_TYPECAST_H
+#define INC_001_HELLOWORLD_LESSON_069_TYPECAST_H
+
+
+void typeCastTest();
+
+
+#endif //INC_001_HELLOWORLD_LESSON_069_TYPECAST_H

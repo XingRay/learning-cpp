@@ -1,8 +1,25 @@
-#include <iostream>
+#include "Lesson_001_HelloWorld.h"
+#include "Lesson_065_Sort.h"
+#include "Lesson_066_TypePunning.h"
+#include "Lesson_067_union.h"
+#include "Lesson_068_VirtualDestructor.h"
+#include "Lesson_069_TypeCast.h"
+#include "Lesson_074_BenchMark.h"
+#include "Lesson_075_struct_binding.h"
+
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    std::cout << "line1" << std::endl;
-    std::cout << "line2" << std::endl;
+
+//    helloWorldTest();
+//    sort();
+//    typePunningTest();
+//    unionTest();
+//    virtualDestructorTest();
+//    typeCastTest();
+//    benchMarkTest();
+    structBindingTest();
+
     return 0;
 }
+
+
