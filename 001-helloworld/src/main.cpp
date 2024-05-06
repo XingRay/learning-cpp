@@ -8,6 +8,7 @@
 #include "Lesson_075_struct_binding.h"
 #include "Lesson_076_Optional.h"
 #include "Lesson_077_Variant.h"
+#include "Lesson_090_move.h"
 
 int main() {
 
@@ -20,8 +21,8 @@ int main() {
 //    benchMarkTest();
 //    structBindingTest();
 //    optionalTest();
-    variantTest();
-
+//    variantTest();
+    moveTest();
 
     return 0;
 }

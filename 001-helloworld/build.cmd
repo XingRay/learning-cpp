@@ -1,7 +1,5 @@
-mkdir build
-cd build
+mkdir output
+rmdir /s /q output\Debug
 
-rmdir /s /q .\Release
-
-cmake .. -G "Visual Studio 17 2022" -A x64 -DCMAKE_BUILD_TYPE=Release -DPLATFORM=win64
-cmake --build . --config Release
+cmake . -G "Visual Studio 17 2022" -A x64 -DCMAKE_BUILD_TYPE=Debug -DPLATFORM=win64 -B output
+cmake --build output --config Debug

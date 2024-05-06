@@ -1,0 +1,14 @@
+//
+// Created by leixing on 2024/4/27.
+//
+
+#ifndef INC_001_HELLOWORLD_LESSON_082_SINGLETON_H
+#define INC_001_HELLOWORLD_LESSON_082_SINGLETON_H
+
+
+class Lesson_082_Singleton {
+
+};
+
+
+#endif //INC_001_HELLOWORLD_LESSON_082_SINGLETON_H

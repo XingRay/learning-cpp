@@ -7,6 +7,26 @@
 #include <iostream>
 #include <string>
 #include <variant>
+#include <fstream>
+
+enum ErrorCode{
+    OK,
+    NOT_EXIST,
+    NO_ACCESS,
+    UNKNOWN
+};
+
+std::variant<std::string, ErrorCode> readFile(const std::string& filePath){
+    std::fstream fs(filePath);
+    if(fs){
+        std::string result = "data ...";
+        // read file
+        fs.close();
+        return result;
+    }else{
+        return ErrorCode::NOT_EXIST;
+    }
+}
 
 void variantTest() {
     std::variant<std::string, int> data;
@@ -39,7 +59,29 @@ void variantTest() {
 
     // variant 的内存占用
     // variant 不同于 union, variant 中每个数据是单独保存的
+
+    // 64位处理器
+    // 40
     std::cout<< sizeof (std::string )<<std::endl;
+    // 4
     std::cout<< sizeof (int )<<std::endl;
+    // 48 考虑内存对齐问题
     std::cout<< sizeof (data)<<std::endl;
+
+
+    auto result = readFile("data.txt");
+    if(auto* error = std::get_if<ErrorCode>(&result)){
+        std::cout<<"error: "<<*error<<std::endl;
+    }else{
+        auto content = std::get<std::string>(result);
+        std::cout<<"content: "<<content<<std::endl;
+    }
+
+    auto result2 = readFile("data2.txt");
+    if(auto* error = std::get_if<ErrorCode>(&result2)){
+        std::cout<<"error: "<<*error<<std::endl;
+    }else{
+        auto content = std::get<std::string>(result2);
+        std::cout<<"content: "<<content<<std::endl;
+    }
 }

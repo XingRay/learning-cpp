@@ -1,0 +1,11 @@
+//
+// Created by leixing on 2024/4/26.
+//
+
+#ifndef INC_001_HELLOWORLD_LESSON_078_ANY_H
+#define INC_001_HELLOWORLD_LESSON_078_ANY_H
+
+
+
+
+#endif //INC_001_HELLOWORLD_LESSON_078_ANY_H
